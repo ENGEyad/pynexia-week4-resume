@@ -1,0 +1,12 @@
+{
+  "project": "Resume App",
+  "build": "passed",
+  "standalone_source_build": "passed",
+  "android_lint": "0 issues",
+  "unit_tests_passed": 3,
+  "unit_test_reports": [
+    "verification/test-results/TEST-com.pynexia.week4.resume.ResumeValidatorTest.xml"
+  ],
+  "device_ui": "not run: emulator rejected installation with 241 MB free internal storage",
+  "firebase_cloud": "not applicable"
+}

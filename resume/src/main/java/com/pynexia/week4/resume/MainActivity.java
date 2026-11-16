@@ -122,13 +122,13 @@ public final class MainActivity extends Activity {
         if (step == 0) {
             String name = ResumeData.value(values, "full_name");
             String email = ResumeData.value(values, "email");
-            if (name.length() < 2) { invalid("Enter your full name"); return; }
-            if (!email.isEmpty() && !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) { invalid("Enter a valid email address"); return; }
+            if (!ResumeValidator.isValidName(name)) { invalid("Enter your full name"); return; }
+            if (!ResumeValidator.isValidEmail(email)) { invalid("Enter a valid email address"); return; }
         }
         hideKeyboard();
         if (step < 2) { step++; render(); }
         else {
-            if (TextUtils.isEmpty(ResumeData.value(values, "skills")) && TextUtils.isEmpty(ResumeData.value(values, "education")) && TextUtils.isEmpty(ResumeData.value(values, "experience"))) {
+            if (!ResumeValidator.hasResumeContent(values)) {
                 invalid("Add at least one education, experience, or skill entry"); return;
             }
             startActivity(new Intent(this, PreviewActivity.class));
