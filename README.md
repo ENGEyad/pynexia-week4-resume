@@ -19,6 +19,6 @@ Draft data is app-private and local. The app uses no network service or account.
 
 - Repository: https://github.com/ENGEyad/pynexia-week4-resume
 - Hosted overview: https://engeyad.github.io/pynexia-week4-resume/
-- Latest release: https://github.com/ENGEyad/pynexia-week4-resume/releases/latest
+- Project report: https://engeyad.github.io/pynexia-week4-resume/downloads/Resume-App-Report.pdf
 
-Build passed; Android Lint reported no issues. Unit tests passed: 3. Emulator UI flows were not run due to low emulator storage.
+Build passed; Android Lint reported no issues. Unit tests passed: 3. Emulator UI flows were not run due to low emulator storage. APK and source ZIP are provided in the local submission kit.
